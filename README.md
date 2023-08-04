@@ -1,8 +1,20 @@
-# Watson: A Note Taking CLI utility
+<h1 align="center">
+    Watson
+  <br>
+</h1>
 
-Watson is a Python script that allows you to manage and search notes from the command line. The script uses SQLite to store note data, and provides a simple interface to add, view, delete, and search notes.
+<h4 align="center">Watson is a utility for note management and search from your terminal</h4>
 
-## Requirements
+
+<p align="center">
+  <a href="#requirements">📋 Requirements</a>
+  <a href="#installation">🏗️ Installation</a>
+  <a href="#usage">⛏️ Usage</a>
+  <br>
+</p>
+
+
+# Requirements
 
 - Python 3.x
 - `argparse` module
@@ -10,7 +22,7 @@ Watson is a Python script that allows you to manage and search notes from the co
 - `rich` module
 
 
-## Installation
+# Installation
 
 ```bash
 git clone https://github.com/devanshbatham/watson
@@ -20,101 +32,96 @@ sudo chmod +x setup.sh
 ```
 
 
-## Usage
+# Usage
 
 ```bash
 watson [subcommand] [options]
 ```
 
-### Subcommands
+## Subcommands
 
-Watson has the following subcommands:
+<p align="center">
+  <table>
+    <tr>
+      <th>Subcommand</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><code>init</code></td>
+      <td>Create the notes table in the database</td>
+    </tr>
+    <tr>
+      <td><code>add</code></td>
+      <td>Add a new note to the database</td>
+    </tr>
+    <tr>
+      <td><code>view</code></td>
+      <td>View all notes in the database</td>
+    </tr>
+    <tr>
+      <td><code>delete</code></td>
+      <td>Delete notes from the database</td>
+    </tr>
+    <tr>
+      <td><code>search</code></td>
+      <td>Search notes in the database for a keyword</td>
+    </tr>
+  </table>
+</p>
 
-- `init`: create the notes table in the database
-- `add`: add a new note to the database
-- `view`: view all notes in the database
-- `delete`: delete notes from the database
-- `search`: search notes in the database for a keyword
 
-
-Each subcommand has its own set of options and arguments. You can view the available options and arguments for each subcommand by running:
-
+For options and arguments of each subcommand, run:
 
 ```bash
 watson [subcommand] --help
 ```
 
-### Examples
+## Examples
 
-Here are some examples of how to use Watson:
-
-#### Initializing the Database
+### Initializing the Database
 
 ```bash
 watson init
 ```
 
-#### Adding a Note
-
-To add a new note to the database, run:
-
+### Adding a Note
 
 ```bash
 watson add "This is a new note" -t "tag1, tag2"
 ```
 
-
-This will add a new note with the text "This is a new note" and the tags "tag1" and "tag2".
-
-
-#### Viewing Notes
-
-To view all notes in the database, run:
-
+### Viewing Notes
 
 ```bash
 watson view
 ```
 
-This will display a table with all notes and their associated tags.
-
-
-#### Deleting Notes
-
-To delete notes from the database, run:
-
+### Deleting Notes
 
 ```bash
 watson delete [options]
 ```
 
-You can delete all notes, notes with a specific tag, or a note with a specific ID. For example, to delete all notes with the tag "tag1", run:
-
+- Delete all notes with a specific tag:
 
 ```bash
 watson delete -t "tag1"
 ```
 
-
-To delete all notes, run:
+- Delete all notes:
 
 ```bash
 watson delete -a
 ```
 
-To delete note with specified ID, run:
+- Delete note with specified ID:
 
-```
+```bash
 watson delete -i 3
 ```
 
-#### Searching Notes
-
-To search notes in the database for a keyword, run:
-
+### Searching Notes
 
 ```bash
 watson search "keyword"
 ```
-
-This will display a table with all notes that contain the keyword in their text or tags.
