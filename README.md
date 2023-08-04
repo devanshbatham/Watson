@@ -24,7 +24,7 @@
 
 # Installation
 
-```bash
+```sh
 git clone https://github.com/devanshbatham/watson
 cd watson
 sudo chmod +x setup.sh
@@ -34,7 +34,7 @@ sudo chmod +x setup.sh
 
 # Usage
 
-```bash
+```sh
 watson [subcommand] [options]
 ```
 
@@ -72,7 +72,7 @@ watson [subcommand] [options]
 
 For options and arguments of each subcommand, run:
 
-```bash
+```sh
 watson [subcommand] --help
 ```
 
@@ -80,48 +80,48 @@ watson [subcommand] --help
 
 ### Initializing the Database
 
-```bash
+```sh
 watson init
 ```
 
 ### Adding a Note
 
-```bash
+```sh
 watson add "This is a new note" -t "tag1, tag2"
 ```
 
 ### Viewing Notes
 
-```bash
+```sh
 watson view
 ```
 
 ### Deleting Notes
 
-```bash
+```sh
 watson delete [options]
 ```
 
 - Delete all notes with a specific tag:
 
-```bash
+```sh
 watson delete -t "tag1"
 ```
 
 - Delete all notes:
 
-```bash
+```sh
 watson delete -a
 ```
 
 - Delete note with specified ID:
 
-```bash
+```sh
 watson delete -i 3
 ```
 
 ### Searching Notes
 
-```bash
+```sh
 watson search "keyword"
 ```
