@@ -14,6 +14,8 @@
 </p>
 
 
+![watson](https://github.com/devanshbatham/Watson/blob/main/static/watson.png?raw=true)
+
 # Requirements
 
 - Python 3.x
