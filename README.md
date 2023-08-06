@@ -14,7 +14,7 @@
 </p>
 
 
-![watson](https://github.com/devanshbatham/Watson/blob/main/static/watson.png?raw=true)
+![watson](https://github.com/devanshbatham/Watson/blob/main/static/banner.png?raw=true)
 
 # Requirements
 
